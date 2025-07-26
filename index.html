@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Clean Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quick Clean Planner</h1>
+        <div id="timeSelection">
+            <p>How much time do you have?</p>
+            <button onclick="selectTime(5)">5 mins</button>
+            <button onclick="selectTime(10)">10 mins</button>
+            <button onclick="selectTime(30)">30 mins</button>
+        </div>
+
+
+        <div id="taskDisplay" style="display: none;">
+            <h2 id="taskTitle"></h2>
+            <p id="taskDescription"></p>
+            <button onclick="getNewTask()">Suggest Another Task</button>
+            <button onclick="resetApp()">Start Over</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

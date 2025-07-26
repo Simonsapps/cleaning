@@ -1,0 +1,63 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top, not center vertically */
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 20px; /* Add some margin around the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+#timeSelection button,
+#taskDisplay button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+#timeSelection button:hover,
+#taskDisplay button:hover {
+    background-color: #0056b3;
+}
+
+
+#taskTitle {
+    color: #4CAF50;
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+
+#taskDescription {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+    white-space: pre-line; /* This will preserve line breaks from the JS string */
+}
